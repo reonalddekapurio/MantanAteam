@@ -1,7 +1,7 @@
 "use client";
 
 interface Props {
-    current?: "menu" | "option" | "quantity";
+    current?: "menu" | "option" | "amount";
 }
 
 export default function OrderTop({ current = "menu" }: Props) {
@@ -24,7 +24,7 @@ export default function OrderTop({ current = "menu" }: Props) {
             </div>
             <div
             className={`px-4 py-2 rounded-r-lg ${
-                current === "quantity" ? "bg-orange-500 text-white" : "bg-orange-200 text-black"
+                current === "amount" ? "bg-orange-500 text-white" : "bg-orange-200 text-black"
             }`}
             >
             数量選択

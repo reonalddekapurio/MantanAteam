@@ -1,6 +1,6 @@
 "use client";
 
-import StepBar from "@/app/components/StepBar";
+import OrderTop from "@/app/components/StepBar";
 import OrderProductCard from "@/app/components/OrderProduct";
 import OrderDetails from "@/app/components/OrderDetails";
 import OrderButtons from "@/app/components/OrderButtons";
@@ -9,7 +9,7 @@ export default function OrderPage() {
     return (
         <div className="flex flex-col min-h-screen bg-white">
         {/* 上部ステップバー */}
-        <StepBar />
+        <OrderTop />
 
         {/* メインエリア */}
         <div className="flex flex-1 px-6 py-4 gap-6">
