@@ -24,7 +24,7 @@ export default function Index(){
         <p className="text-[32px] font-bold m-5">いらっしゃいませ　マンタンへようこそ</p>
 
         <button className="bg-[#63A144] text-white p-5 w-[547px] h-[172px] rounded-full font-bold  text-[40px]">
-          <a href="#">注文を開始する</a>
+          <a href="/select-order">注文を開始する</a>
         </button>
 
         <p className="text-[32px] font-bold m-5">タブレットなし注文希望の方は店員までお願いします</p>
