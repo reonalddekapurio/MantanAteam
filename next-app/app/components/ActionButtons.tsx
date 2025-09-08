@@ -2,7 +2,7 @@
 
 export default function ActionButtons() {
     const mainBtns = [
-        { label: "店員呼び出し", color: "bg-green-500" },
+        { label: "店員呼び出し", color: "bg-green-800" },
         { label: "操作ガイド", color: "bg-orange-300" },
         { label: "アレルギー情報", color: "bg-orange-300" },
         { label: "お持ち帰り", color: "bg-orange-300" },

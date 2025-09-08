@@ -1,8 +1,8 @@
 "use client";
 
-import OrderTop from "@/app/components/StepBar";
-import OptionList from "@/app/components/OptionList";
-import OptionCart from "@/app/components/OptionCart";
+import OrderTop from "../components/StepBar";
+import OptionList from "../components/OptionList";
+import OptionCart from "../components/OptionCart";
 import OrderButtons from "../components/OrderButtons";
 
 export default function OrderOption() {
