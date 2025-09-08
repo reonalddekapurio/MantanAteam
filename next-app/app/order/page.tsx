@@ -1,12 +1,13 @@
 "use client";
 
-import OrderTop from "@/app/components/StepBar";
-import OrderProductCard from "@/app/components/OrderProduct";
-import OrderDetails from "@/app/components/OrderDetails";
-import OrderButtons from "@/app/components/OrderButtons";
+import OrderTop from "../components/StepBar";
+import OrderProduct from "../components/OrderProduct";
+import OrderDetails from "../components/OrderDetails";
+import OrderButtons from "../components/OrderButtons";
 
 export default function OrderPage() {
     return (
+        <div className="flex flex-col h-[800px] mx-auto bg-white">
         <div className="flex flex-col min-h-screen bg-white">
         {/* 上部ステップバー */}
         <OrderTop />
@@ -15,10 +16,10 @@ export default function OrderPage() {
         <div className="flex flex-1 px-6 py-4 gap-6">
             {/* 左：商品カード */}
             <div className="flex-1">
-            <OrderProductCard
+            <OrderProduct
                 name="ハンバーグ"
                 price="¥1,000(税込)"
-                image="/hamburg1.jpg"
+                image="/img/hamburg/hamburg-1.jpg"
             />
             </div>
 
@@ -28,6 +29,7 @@ export default function OrderPage() {
 
         {/* 下部ボタン */}
         <OrderButtons />
+        </div>
         </div>
     );
 }

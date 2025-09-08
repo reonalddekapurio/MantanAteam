@@ -9,6 +9,7 @@ export default function ActionButtons() {
         { label: "アレルギー情報", color: "bg-[#FFAA49]" ,css: "h-[95px] w-[168px] p-4",link:"#"},
         { label: "お持ち帰り", color: "bg-[#FFAA49]"  ,css: "h-[95px] w-[168px]",link:"#"},
         { label: "注文履歴", color: "bg-[#FFAA49]"  ,css: "h-[95px] w-[168px]",link:"#"},
+
         { label: "注文カゴ", color: "bg-[#63A144]" ,css: "h-[207px] w-[168px]",link:"/cart"},
     ];
 
