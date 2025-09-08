@@ -29,6 +29,18 @@ export default function CategoryMenu() {
   };
 
   const [active, setActive] = useState<string | null>(null);
+  const [activeSub, setActiveSub] = useState<string | null>(null);
+
+  // 親カテゴリ切り替え時にサブカテゴリの選択もリセット
+  const handleParentClick = (category: string) => {
+    if (active === category) {
+      setActive(null);
+      setActiveSub(null);
+    } else {
+      setActive(category);
+      setActiveSub(null);
+    }
+  };
 
   return (
     <div className="space-y-4 p-4">
@@ -42,7 +54,7 @@ export default function CategoryMenu() {
                 ? "bg-[#FEFCF0] border border-[#FFCA6D]"
                 : "bg-[#FFCA6D]"}
             `}
-            onClick={() => setActive(active === category ? null : category)}
+            onClick={() => handleParentClick(category)}
           >
             {category}
           </button>
@@ -56,9 +68,11 @@ export default function CategoryMenu() {
             <button
               key={j}
               className={`w-[139px] h-[71px] rounded-xl font-bold text-center text-sm
-                bg-[#FFCA6D]
+                ${activeSub === sub
+                  ? "bg-[#FEFCF0] border border-[#FFCA6D]"
+                  : "bg-[#FFCA6D]"}
               `}
-              onClick={() => console.log(sub)}
+              onClick={() => setActiveSub(sub)}
             >
               {sub}
             </button>
@@ -68,5 +82,6 @@ export default function CategoryMenu() {
     </div>
   );
 }
+
 
 
