@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function MenuItems() {
     return (
-        <div className=" px-4 py-6">
+        <div className="">
                     <div className=" relative flex flex-col  rounded-[24px]  w-[400px] h-[230px] shadow-xl">
 
                         <Image

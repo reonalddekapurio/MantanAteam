@@ -22,8 +22,9 @@ export default function MenuPage() {
             </div>
 
             {/* 商品一覧 */}
-            <div>
-                <MenuItems />
+            <div className="grid grid-cols-2  w-[900] h-[500px] mx-auto">
+                <MenuItems /> <MenuItems /> 
+                <MenuItems /> <MenuItems /> 
             </div>
 
             {/* 右の矢印 */}
@@ -33,13 +34,13 @@ export default function MenuPage() {
             </div>
 
             {/* ページ番号（左下固定） */}
-            <div className="absolute bottom-4 left-4">
+            <div className="absolute bottom-0 left-0">
             <Number number="01" />
             </div>
         </div>
 
         {/* 右側 操作パネル */}
-        <div className="w-1/6 h-screen">
+        <div>
             <ActionButtons />
         </div>
         </div>
