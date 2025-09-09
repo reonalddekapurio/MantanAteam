@@ -13,13 +13,17 @@ export default function OrderPage() {
         <CancelButton />
 
         {/* 中央エリア */}
-        <div className="flex flex-1 px-12 py-8 gap-12">
-            <ProductImage
-            imageUrl="/hamburg1.jpg"
-            name="ハンバーグ"
-            price={1000}
-            />
-            <OrderOptions />
+        <div className="flex flex-1 px-12 py-3 gap-12">
+            <div className="w-[795px] h-[527px] shadow-xl text-[30px]">
+                <ProductImage 
+                imageUrl="/hamburg1.jpg"
+                name="ハンバーグ"
+                price={1000}
+                
+                />
+            </div>
+                <OrderOptions />
+            
         </div>
 
         {/* 下部ボタン */}

@@ -4,13 +4,15 @@ import OrderTop from "../components/StepBar";
 import OptionList from "../components/OptionList";
 import OptionCart from "../components/OptionCart";
 import OrderButtons from "../components/OrderButtons";
-
+import CancelButton from "../components/CancelButton";
 export default function OrderOption() {
     return (
         <div className="flex flex-col h-[800px] mx-auto bg-white">
             {/* 上部：ステップバー */}
             <div className="shrink-0">
                 <OrderTop current="option" />
+                <CancelButton />
+                
             </div>
 
             {/* 中央：商品一覧 + カート */}
