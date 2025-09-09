@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import BackButton from "@/app/components/BackButton";
-import SideMenu from "@/app/components/ActionButtons";
+import ActionButtons from "@/app/components/ActionButtons";
 import Number from "@/app/components/Number";
 import CartList from "@/app/components/CartList";
 import CartSummary from "@/app/components/CartSummary";
@@ -52,8 +52,8 @@ export default function CartPage() {
         </div>
 
         {/* 右サイドメニュー */}
-        <div className="absolute top-20 right-6 flex flex-col gap-4">
-            <SideMenu />
+        <div>
+            <ActionButtons />
         </div>
 
         {/* 左下インジケーター */}

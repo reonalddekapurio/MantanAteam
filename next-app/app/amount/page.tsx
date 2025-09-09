@@ -15,7 +15,7 @@ export default function OrderPage() {
         {/* 中央エリア */}
         <div className="flex flex-1 px-12 py-8 gap-12">
             <ProductImage
-            imageUrl="/hamburg.jpg"
+            imageUrl="/hamburg1.jpg"
             name="ハンバーグ"
             price={1000}
             />
@@ -23,7 +23,10 @@ export default function OrderPage() {
         </div>
 
         {/* 下部ボタン */}
-        <BottomButtons />
+        <div className="p-5">
+            <BottomButtons />
+        </div>
+       
         </div>
     );
 }

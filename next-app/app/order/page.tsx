@@ -28,7 +28,9 @@ export default function OrderPage() {
         </div>
 
         {/* 下部ボタン */}
+        <div className="p-5">
         <OrderButtons />
+        </div>
         </div>
         </div>
     );

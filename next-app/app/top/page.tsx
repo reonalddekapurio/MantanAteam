@@ -22,7 +22,7 @@ export default function MenuPage() {
             </div>
 
             {/* 商品一覧 */}
-            <div className="grid grid-cols-2  w-[900] h-[500px] mx-auto">
+            <div className="grid grid-cols-2  w-[900] h-[500px] mx-5">
                 <MenuItems /> <MenuItems /> 
                 <MenuItems /> <MenuItems /> 
             </div>
