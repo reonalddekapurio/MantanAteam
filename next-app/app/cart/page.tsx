@@ -32,7 +32,7 @@ export default function CartPage() {
     const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return (
-        <div className="flex flex-col h-[800px] mx-auto bg-white">
+        <div className="flex flex-col h-[800px">
         {/* 上部ボタン */}
         <div className="absolute top-4 left-4 flex gap-4">
             <BackButton />
@@ -47,7 +47,7 @@ export default function CartPage() {
         </div>
 
         {/* 合計と注文確定 */}
-        <div className="absolute bottom-6 left-6">
+        <div className="absolute bottom-6 right-50">
             <CartSummary total={total} />
         </div>
 
@@ -57,9 +57,10 @@ export default function CartPage() {
         </div>
 
         {/* 左下インジケーター */}
-        <div className="absolute bottom-6 left-0">
+        <div className="absolute bottom-0 left-0">
             <Number />
         </div>
+
         </div>
     );
 }
