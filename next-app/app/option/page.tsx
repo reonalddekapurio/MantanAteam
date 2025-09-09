@@ -27,7 +27,7 @@ export default function OrderOption() {
             </div>
 
             {/* 下部：操作ボタン */}
-            <div className="shrink-0">
+            <div className="shrink-0 p-5">
                 <OrderButtons />
             </div>
         </div>
