@@ -24,7 +24,7 @@ export default function CartItem({
         {/* 商品名 + 画像 */}
         <div className="flex items-center gap-2">
             <img src={imageUrl} alt={name} className="w-12 h-12 rounded-md object-cover" />
-            <span>{name}</span>
+            <span className="font-bold text-[25px]">{name}</span>
         </div>
 
         {/* 価格 */}
@@ -50,7 +50,7 @@ export default function CartItem({
         {/* 削除 */}
         <button
             onClick={() => onRemove(id)}
-            className="bg-gray-300 px-4 py-2 rounded-lg shadow"
+            className="bg-gray-300 px-4 py-2 rounded-lg shadow w-[108px] h-[54px]"
         >
             削除
         </button>
