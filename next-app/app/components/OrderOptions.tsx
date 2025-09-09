@@ -1,6 +1,6 @@
 export default function OrderOptions() {
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 text-[30px]">
         <div>
             <p className="font-bold">個数</p>
             <div className="flex items-center gap-4 mt-2">
@@ -21,7 +21,7 @@ export default function OrderOptions() {
 
         <div className="mt-4">
             <p className="font-bold">合計</p>
-            <p className="text-xl font-bold text-red-500">￥1,100(税込)</p>
+            <p className="text-xl font-bold text-red-500 text-[35px]">￥1,100(税込)</p>
         </div>
         </div>
     );

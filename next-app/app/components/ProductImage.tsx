@@ -10,7 +10,7 @@ export default function ProductImage({ imageUrl, name, price }: Props) {
         <img
             src={imageUrl}
             alt={name}
-            className="w-[400px] rounded-lg shadow-md"
+            className="w-[400px] rounded-lg w-[753px] h-[365px]"
         />
         <div className="flex justify-between w-full px-4 mt-2">
             <span className="font-bold">{name}</span>
