@@ -15,8 +15,8 @@ const items: Item[] = [
 
 export default function OrderList() {
     return (
-        <div className="bg-white rounded-lg shadow-sm">
-        <div className="grid grid-cols-3 font-bold border-b pb-2 mb-2">
+        <div className="bg-white rounded-lg shadow-sm mt-4">
+        <div className="grid grid-cols-3 font-bold border-b pb-2 mb-2 text-[28px]">
             <span>商品</span>
             <span>価格</span>
             <span>数量</span>
