@@ -7,7 +7,7 @@ interface Item {
 }
 
 const items: Item[] = [
-    { id: 1, name: "ハンバーグ", price: 1000, imageUrl: "/hamburg.jpg", quantity: 1 },
+    { id: 1, name: "ハンバーグ", price: 1000, imageUrl: "/hamburg1.jpg", quantity: 1 },
     { id: 2, name: "パスタ", price: 800, imageUrl: "/pasta.jpg", quantity: 1 },
     { id: 3, name: "スープ", price: 600, imageUrl: "/soup.jpg", quantity: 1 },
     { id: 4, name: "パンケーキ", price: 600, imageUrl: "/pancake.jpg", quantity: 1 },
