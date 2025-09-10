@@ -7,7 +7,7 @@ import BottomButtons from "@/app/components/BottomButtons";
 
 export default function OrderPage() {
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div className="relative min-h-screen flex flex-col bg-white">
         {/* 上部 */}
         <StepBar current="amount" />
         <CancelButton />
