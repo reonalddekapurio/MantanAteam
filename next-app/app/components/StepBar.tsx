@@ -35,7 +35,7 @@ export default function OrderTop({ current = "menu" }: Props) {
                     />
 
                     {/* テキスト */}
-                    <span className="absolute inset-0 flex items-center justify-start pl-15 ml-5 text-xl text-white">
+                    <span className="absolute inset-0 flex items-center justify-start pl-18 ml-5 text-xl text-white">
                         {step.label}
                     </span>
                     </div>

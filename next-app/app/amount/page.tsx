@@ -1,7 +1,7 @@
 
 import StepBar from "@/app/components/StepBar";
 import CancelButton from "@/app/components/CancelButton";
-import ProductImage from "@/app/components/ProductImage";
+import OrderProduct from "@/app/components/OrderProduct";
 import OrderOptions from "@/app/components/OrderOptions";
 import BottomButtons from "@/app/components/BottomButtons";
 
@@ -13,15 +13,17 @@ export default function OrderPage() {
         <CancelButton />
 
         {/* 中央エリア */}
-        <div className="flex flex-1 px-12 py-8 gap-12">
-            <ProductImage
-            imageUrl="/hamburg.jpg"
-            name="ハンバーグ"
-            price={1000}
-            />
-            <OrderOptions />
+        <div className="flex flex-1 px-6 py-4 gap-6">
+                {/* 左：商品カード */}
+                <div className="flex-1">
+                    <OrderProduct
+                        name="ハンバーグ"
+                        price="¥1,000(税込)"
+                        image="/img/hamburg/hamburg-1.jpg"
+                    />
+                </div>
+                <OrderOptions />
         </div>
-
         {/* 下部ボタン */}
         <BottomButtons />
         </div>
