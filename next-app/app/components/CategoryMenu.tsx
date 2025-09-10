@@ -28,10 +28,10 @@ export default function CategoryMenu() {
     "サラダ スープ セットライス": ["サラダ", "スープ", "セットライス"],
   };
 
-  const [active, setActive] = useState<string | null>(null);
-  const [activeSub, setActiveSub] = useState<string | null>(null);
+  // 初期値を「ステーキハンバーグ」「ハンバーグ」に設定
+  const [active, setActive] = useState<string>("ステーキハンバーグ");
+  const [activeSub, setActiveSub] = useState<string>("ハンバーグ");
 
-  // 親カテゴリ切り替え時にサブカテゴリの選択もリセット
   const handleParentClick = (category: string) => {
     if (active === category) {
       setActive(null);
@@ -82,6 +82,7 @@ export default function CategoryMenu() {
     </div>
   );
 }
+
 
 
 

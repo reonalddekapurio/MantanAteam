@@ -8,7 +8,7 @@ import CartList from "@/app/components/CartList";
 import CartSummary from "@/app/components/CartSummary";
 
 const initialItems = [
-    { id: 1, name: "ハンバーグ", price: 1000, quantity: 1, imageUrl: "/hamburg.jpg" },
+    { id: 1, name: "ハンバーグ", price: 1000, quantity: 1, imageUrl: "/hamburg1.jpg" },
     { id: 2, name: "パスタ", price: 800, quantity: 1, imageUrl: "/pasta.jpg" },
     { id: 3, name: "スープ", price: 600, quantity: 1, imageUrl: "/soup.jpg" },
     { id: 4, name: "パンケーキ", price: 600, quantity: 1, imageUrl: "/pancake.jpg" },

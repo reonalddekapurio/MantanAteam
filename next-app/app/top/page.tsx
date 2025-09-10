@@ -18,7 +18,7 @@ export default function MenuPage() {
             <div className="flex flex-1">
             {/* 左の矢印 */}
             <div className="flex items-center px-2">
-                <button className="bg-orange-200 rounded-full p-3 shadow">←</button>
+                <button className="bg-[#FFCA6D] rounded-full p-3 shadow w-[50px] h-[109px] text-white text-xl">◀︎</button>
             </div>
 
             {/* 商品一覧 */}
@@ -29,7 +29,7 @@ export default function MenuPage() {
 
             {/* 右の矢印 */}
             <div className="flex items-center px-2">
-                <button className="bg-orange-200 rounded-full p-3 shadow">→</button>
+                <button className="bg-[#FFCA6D] rounded-full p-3 shadow w-[50px] h-[109px] text-white text-xl">▶︎</button>
             </div>
             </div>
 
