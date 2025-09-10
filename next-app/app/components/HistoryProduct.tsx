@@ -25,15 +25,15 @@ export default function OrderList() {
         {items.map((item) => (
             <div
             key={item.id}
-            className="grid grid-cols-3 items-center gap-4 py-3 border-b last:border-none"
+            className="grid grid-cols-3 items-center gap-4 py-3 border-b last:border-none "
             >
             <div className="flex items-center gap-2">
                 <img
                 src={item.imageUrl}
                 alt={item.name}
-                className="w-12 h-12 rounded-md object-cover"
+                className="w-12 h-12 rounded-md object-cover "
                 />
-                <span>{item.name}</span>
+                <span className="font-bold text-[25px]">{item.name}</span>
             </div>
             <span>￥{item.price.toLocaleString()}(税込)</span>
             <span>{item.quantity}</span>
