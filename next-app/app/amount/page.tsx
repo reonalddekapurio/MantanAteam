@@ -12,24 +12,26 @@ export default function OrderPage() {
                 <StepBar current="amount" />
                 <CancelButton />
 
-        {/* 中央エリア */}
-        <div className="flex flex-1 px-12 py-3 gap-12">
-            <div className="w-[795px] h-[527px] shadow-xl text-[30px] rounded-[24px]">
-                <OrderProduct 
-                image="/hamburg1.jpg"
-                name="ハンバーグ"
-                price="¥1,000(税込)"
+            {/* 中央エリア */}
+            <div className="flex flex-1 px-12 py-3 gap-12">
+                <div className="w-[795px] h-[527px] shadow-xl text-[30px] rounded-[24px]">
+                    <OrderProduct 
+                    image="/hamburg1.jpg"
+                    name="ハンバーグ"
+                    price="¥1,000(税込)"
+                    
+                    />
+                </div>
+                    <OrderOptions />
                 
-                />
             </div>
-                <OrderOptions />
+            {/* 下部ボタン */}
+            <div className="p-5">
+                <BottomButtons />
+            </div>  
             
-        </div>
-        {/* 下部ボタン */}
-        <div className="p-5">
-            <BottomButtons />
-        </div>
-       
+            </div>
+        
 
         </div>
     );

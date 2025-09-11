@@ -75,7 +75,7 @@ export default function CartPage() {
         {/* 右サイドメニュー */}
 
         <div className="absolute top-20 right-6 bottom-6 flex flex-col gap-4 w-40">
-            <SideMenu />
+            <ActionButtons />
 
         </div>
 
