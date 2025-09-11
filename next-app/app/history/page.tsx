@@ -24,7 +24,7 @@ export default function OrdersPage() {
 
         {/* 左下インジケーター */}
 
-        <div className="absolute bottom-6 left-6">
+        <div className="absolute bottom-0 left-0">
             <Number />
         </div>
 
