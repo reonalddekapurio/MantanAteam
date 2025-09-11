@@ -13,7 +13,7 @@ export default function OrdersPage() {
             </div>
 
         {/* 注文リスト */}
-            <div className="absolute top-20 left-6 right-48 bottom-20 overflow-y-auto">
+            <div className="absolute top-20 left-6 right-48 bottom-20 text-black">
                 <HistoryProducts />
             </div>
 

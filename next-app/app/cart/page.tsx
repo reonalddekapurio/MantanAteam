@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation"; // ← 追加
 import BackButton from "@/app/components/BackButton";
 import ActionButtons from "@/app/components/ActionButtons";
 import Number from "@/app/components/Number";
@@ -17,12 +18,11 @@ const initialItems = [
 
 export default function CartPage() {
     const [items, setItems] = useState(initialItems);
+    const router = useRouter();
 
     const handleUpdate = (id: number, quantity: number) => {
         setItems((prev) =>
-        prev.map((item) =>
-            item.id === id ? { ...item, quantity } : item
-        )
+        prev.map((item) => (item.id === id ? { ...item, quantity } : item))
         );
     };
 
@@ -30,34 +30,53 @@ export default function CartPage() {
         setItems((prev) => prev.filter((item) => item.id !== id));
     };
 
+    const handleClear = () => {
+        setItems([]); // ← 全削除
+    };
+
+    const handleConfirm = () => {
+        // ここで注文確定処理（API送信など）を入れてもOK
+        router.push("/"); // ← トップページに戻る
+    };
+
     const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
     return (
-        <div className="flex flex-col h-[800px">
+
+        <div className="relative flex flex-col h-[800px] mx-auto bg-white">
+
         {/* 上部ボタン */}
-        <div className="absolute top-4 left-4 flex gap-4">
+        <div className="absolute top-4 left-6 right-48 flex justify-between items-center">
             <BackButton />
-            <button className="absolute left-175 bg-gray-300 text-gray-800 px-6 py-2 text-[30px] text-white font-bold rounded-full shadow w-[357px] h-[67px]">
-            注文をからに
+
+            <button
+            onClick={handleClear}
+            className="bg-gray-400 hover:bg-orange-500 w-70 h-15 text-white font-bold text-2xl px-10 py-2 rounded-full shadow"
+            >
+            注文を空に
+
             </button>
         </div>
 
         {/* 注文リスト */}
 
-
-        <div className="absolute top-25 left-6 right-48 bottom-28 overflow-y-auto">
+        <div className="absolute top-20 left-6 right-48 bottom-28 text-black">
 
             <CartList items={items} onUpdate={handleUpdate} onRemove={handleRemove} />
         </div>
 
         {/* 合計と注文確定 */}
-        <div className="absolute bottom-6 right-50">
+
+        <div className="absolute bottom-6 left-6 right-48 flex justify-end">
+
             <CartSummary total={total} />
         </div>
 
         {/* 右サイドメニュー */}
-        <div>
-            <ActionButtons />
+
+        <div className="absolute top-20 right-6 bottom-6 flex flex-col gap-4 w-40">
+            <SideMenu />
+
         </div>
 
         {/* 左下インジケーター */}

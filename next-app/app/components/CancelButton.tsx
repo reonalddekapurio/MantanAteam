@@ -1,9 +1,19 @@
-import Link from "next/link";
+
+'use client';
+
+import {useRouter} from "next/navigation";
+
 
 export default function CancelButton() {
+    const router = useRouter();
+
     return (
-        <button className="absolute top-4 right-6 bg-gray-300 text-white px-4 py-2 rounded-full w-[264px] h-[97px] text-[30px] font-bold">
-        <Link href="/top">
+
+        <button 
+        className="absolute w-60 h-20 top-5 right-18 bg-gray-300 font-bold text-3xl text-white px-5 py-3 rounded-full"
+        onClick={() => router.push("/top")}
+        >
+
         キャンセル
         </Link>
         </button>

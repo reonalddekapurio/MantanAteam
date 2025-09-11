@@ -1,8 +1,11 @@
+
 "use client";
+
 
 import { useRouter } from "next/navigation";
 
 export default function BottomButtons() {
+
   const router = useRouter();
 
   return (
@@ -22,5 +25,6 @@ export default function BottomButtons() {
       </button>
     </div>
   );
+
 }
 
