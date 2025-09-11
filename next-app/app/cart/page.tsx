@@ -48,7 +48,7 @@ export default function CartPage() {
             </div>
 
             {/* 合計と注文確定 */}
-            <div className="absolute bottom-6 left-6">
+            <div className="absolute bottom-6 right-47">
                 <CartSummary total={total} />
             </div>
 
