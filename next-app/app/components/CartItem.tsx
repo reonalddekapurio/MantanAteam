@@ -19,41 +19,41 @@ export default function CartItem({
     onUpdate,
     onRemove,
 }: CartItemProps) {
-    return (
-        <div className="grid grid-cols-4 items-center gap-4 py-3 border-b last:border-none">
+    return (//flex justify-between items-center gap-4 py-5 px-2 shadow-sm my-4 last:border-none rounded-xl
+        <div className="grid grid-cols-4 items-center gap-4 py-5 px-2 my-4 shadow-sm  last:border-none rounded-xl overflow-y-auto">
         {/* 商品名 + 画像 */}
-        <div className="flex items-center gap-2">
-            <img src={imageUrl} alt={name} className="w-12 h-12 rounded-md object-cover" />
-            <span>{name}</span>
-        </div>
+            <div className="flex items-center gap-1">
+                <img src={imageUrl} alt={name} className="w-20 h-20 rounded-md object-cover" />
+                <span className="text-2xl font-bold pl-5">{name}</span>
+            </div>
 
         {/* 価格 */}
-        <span>￥{price.toLocaleString()}(税込)</span>
+            <span className="text-2xl  text-left gap-2 ml-10">￥{price.toLocaleString()}(税込)</span>
 
         {/* 数量操作 */}
-        <div className="flex items-center gap-2">
-            <button
-            onClick={() => onUpdate(id, Math.max(1, quantity - 1))}
-            className="px-2 py-1 border rounded-full"
-            >
-            －
-            </button>
-            <span className="font-bold">{quantity}</span>
-            <button
-            onClick={() => onUpdate(id, quantity + 1)}
-            className="px-2 py-1 border rounded-full"
-            >
-            ＋
-            </button>
-        </div>
+            <div className="flex items-center gap-2">
+                <button
+                onClick={() => onUpdate(id, Math.max(1, quantity - 1))}
+                className="px-2 py-1 border rounded-full"
+                >
+                －
+                </button>
+                <span className="font-bold">{quantity}</span>
+                <button
+                onClick={() => onUpdate(id, quantity + 1)}
+                className="px-2 py-1 border rounded-full"
+                >
+                ＋
+                </button>
+            </div>
 
-        {/* 削除 */}
-        <button
-            onClick={() => onRemove(id)}
-            className="bg-gray-300 px-4 py-2 rounded-lg shadow"
-        >
-            削除
-        </button>
+            {/* 削除 */}
+            <button
+                onClick={() => onRemove(id)}
+                className="bg-gray-300 px-2 py-1 w-20 h-10  text-white rounded-lg shadow"
+            >
+                削除
+            </button>
         </div>
     );
 }

@@ -19,12 +19,12 @@ interface CartListProps {
 export default function CartList({ items, onUpdate, onRemove }: CartListProps) {
     return (
         <div className="mt-4">
-        <div className="grid grid-cols-4 font-bold border-b pb-2 mb-2">
-            <span>商品</span>
-            <span>価格</span>
-            <span>数量</span>
-            <span></span>
-        </div>
+            <div className="flex justify-between font-bold text-2xl border-b pb-2 px-5 mb-2 mt-5">
+                <span>商品</span>
+                <span>価格</span>
+                <span>数量</span>
+                <span></span>
+            </div>
         {items.map((item) => (
             <CartItem
             key={item.id}
