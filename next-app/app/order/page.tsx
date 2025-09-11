@@ -26,9 +26,11 @@ export default function OrderPage() {
                     <OrderDetails name="ハンバーグ" />
                 </div>
 
-                {/* 下部ボタン */}
-                <OrderButtons />
-            </div>
+        {/* 下部ボタン */}
+        <div className="p-5">
+        <OrderButtons />
+        </div>
+        </div>
         </div>
     );
 }

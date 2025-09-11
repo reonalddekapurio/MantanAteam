@@ -6,6 +6,7 @@ import Number from "@/app/components/Number";
 export default function OrdersPage() {
     return (
         <div className="flex flex-col h-[800px] mx-auto bg-white">
+            
         {/* 上部ボタン */}
             <div className="absolute top-4 left-4">
                 <BackButton />
@@ -22,9 +23,12 @@ export default function OrdersPage() {
             </div>
 
         {/* 左下インジケーター */}
-            <div className="absolute bottom-0 left-0">
-                <Number />
-            </div>
+
+        <div className="absolute bottom-0 left-0">
+            <Number />
+        </div>
+
+
         </div>
     );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+
 import { useRouter,usePathname } from "next/navigation";
 
 export default function OrderButtons() {
@@ -25,6 +26,7 @@ export default function OrderButtons() {
             onClick={() => router.push(getNextPath())}
             className="bg-green-500 text-white px-20 py-3 rounded-4xl font-bold text-2xl shadow"
             >
+
             次へすすむ
         </button>
         </div>

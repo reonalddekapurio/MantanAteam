@@ -30,7 +30,7 @@ export default function OrderTop({ current = "menu" }: Props) {
                     {/* 内側のオレンジ背景 */}
                     <div
                         className={`absolute top-1/2 left-[2px] w-[301px] h-[91px] -translate-y-1/2 clip-arrow-inner ${
-                        current === step.key ? "bg-orange-500" : "bg-orange-200 opacity-80"
+                        current === step.key ? "bg-[#EC830A]" : "bg-[#DBB487] opacity-80"
                         }`}
                     />
 
