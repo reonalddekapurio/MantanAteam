@@ -10,14 +10,14 @@ export default function OrderOptions() {
             </div>
         </div>
 
-        <div>
-            <p className="font-bold">オプション</p>
-            <ul className="list-disc list-inside text-gray-700">
-            <li>text</li>
-            <li>text</li>
-            <li>text</li>
-            </ul>
-        </div>
+            <div>
+                <p className="font-bold text-3xl text-black">オプション</p>
+                <ul className="list-disc list-inside text-gray-700">
+                    <li className="mt-10 pl-3 font-bold text-xl">text</li>
+                    <li className="mt-10 pl-3 font-bold text-xl">text</li>
+                    <li className="mt-10 pl-3 font-bold text-xl">text</li>
+                </ul>
+            </div>
 
         <div className="mt-4">
             <p className="font-bold">合計</p>

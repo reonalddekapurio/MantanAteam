@@ -1,13 +1,13 @@
 
 import StepBar from "@/app/components/StepBar";
 import CancelButton from "@/app/components/CancelButton";
-import ProductImage from "@/app/components/ProductImage";
+import OrderProduct from "@/app/components/OrderProduct";
 import OrderOptions from "@/app/components/OrderOptions";
 import BottomButtons from "@/app/components/BottomButtons";
 
 export default function OrderPage() {
     return (
-        <div className="relative min-h-screen flex flex-col">
+        <div className="relative min-h-screen flex flex-col bg-white">
         {/* 上部 */}
         <StepBar current="amount" />
         <CancelButton />
@@ -25,7 +25,6 @@ export default function OrderPage() {
                 <OrderOptions />
             
         </div>
-
         {/* 下部ボタン */}
         <div className="p-5">
             <BottomButtons />

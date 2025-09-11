@@ -18,7 +18,7 @@ export default function OrderOption() {
             {/* 中央：商品一覧 + カート */}
             <div className="flex flex-1 p-4 gap-4">
                 {/* 左側：商品一覧 */}
-                <div className="flex-[3] grid grid-cols-3 gap-4">
+                <div className="flex-[2] grid grid-cols-3 gap-4">
                     <OptionList />
                 </div>
 
