@@ -16,11 +16,11 @@ export default function OrderProductCard({ name, price, image }: OrderProductCar
             alt={name}
             width={600}
             height={350}
-            className="rounded-lg w-full h-auto"
+            className="rounded-lg w-full h-[400px] object-cover"
         />
         <div className="mt-4 flex justify-between items-center">
-            <h2 className="font-bold text-lg">{name}</h2>
-            <p className="text-base text-black font-semibold">{price}</p>
+            <h2 className="font-bold pb-20 text-3xl">{name}</h2>
+            <p className="font-bold text-xl text-black font-semibold mt-20 mr-3">{price}</p>
         </div>
         </div>
     );

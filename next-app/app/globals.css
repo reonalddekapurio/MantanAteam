@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -24,3 +27,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .clip-arrow {
+    clip-path: polygon(
+      0 0.6%,
+      80.5% 0.6%,
+      80.5% 0,
+      100% 50%,
+      80.5% 100%,
+      80.5% 99.4%,
+      0 99.4%
+    );
+  }
+
+  .clip-arrow-inner {
+    clip-path: polygon(
+      0 -1.8%,
+      81.9% -1.8%,
+      81.9% 0,
+      100% 50%,
+      81.9% 100%,
+      81.9% 101.8%,
+      0 101.8%
+    );
+  }
+}
+
