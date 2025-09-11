@@ -5,7 +5,6 @@ import OptionList from "../components/OptionList";
 import OptionCart from "../components/OptionCart";
 import OrderButtons from "../components/OrderButtons";
 import CancelButton from "../components/CancelButton";
-
 export default function OrderOption() {
     return (
         <div className="flex flex-col h-[800px] mx-auto bg-white">
@@ -13,6 +12,7 @@ export default function OrderOption() {
             <div className="shrink-0">
                 <OrderTop current="option" />
                 <CancelButton />
+                
             </div>
 
             {/* 中央：商品一覧 + カート */}
@@ -29,7 +29,7 @@ export default function OrderOption() {
             </div>
 
             {/* 下部：操作ボタン */}
-            <div className="shrink-0">
+            <div className="shrink-0 p-5">
                 <OrderButtons />
             </div>
         </div>

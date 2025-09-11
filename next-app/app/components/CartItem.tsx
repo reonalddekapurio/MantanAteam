@@ -22,10 +22,12 @@ export default function CartItem({
     return (//flex justify-between items-center gap-4 py-5 px-2 shadow-sm my-4 last:border-none rounded-xl
         <div className="grid grid-cols-4 items-center gap-4 py-5 px-2 my-4 shadow-sm  last:border-none rounded-xl overflow-y-auto">
         {/* 商品名 + 画像 */}
-            <div className="flex items-center gap-1">
-                <img src={imageUrl} alt={name} className="w-20 h-20 rounded-md object-cover" />
-                <span className="text-2xl font-bold pl-5">{name}</span>
-            </div>
+
+        <div className="flex items-center gap-2">
+            <img src={imageUrl} alt={name} className="w-12 h-12 rounded-md object-cover" />
+            <span className="font-bold text-[25px]">{name}</span>
+        </div>
+
 
         {/* 価格 */}
             <span className="text-2xl  text-left gap-2 ml-10">￥{price.toLocaleString()}(税込)</span>
@@ -55,5 +57,16 @@ export default function CartItem({
                 削除
             </button>
         </div>
+
+
+        {/* 削除 */}
+        <button
+            onClick={() => onRemove(id)}
+            className="bg-gray-300 px-4 py-2 rounded-lg shadow w-[108px] h-[54px]"
+        >
+            削除
+        </button>
+        </div>
+
     );
 }
