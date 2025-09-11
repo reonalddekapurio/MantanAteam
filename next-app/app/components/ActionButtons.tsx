@@ -13,7 +13,7 @@ export default function ActionButtons() {
     { label: "店員呼び出し", color: "bg-[#63A144]", css: "h-[146px] w-[168px]", type: "modal", modalId: "callStaff" },
     { label: "操作ガイド", color: "bg-[#FFAA49]", css: "h-[95px] w-[168px] p-1", type: "modal", modalId: "guide" },
     { label: "アレルギー表", color: "bg-[#FFAA49]", css: "h-[95px] w-[168px]", type: "modal", modalId: "allergy" },
-    { label: "お持ち帰り", color: "bg-[#FFAA49]", css: "h-[95px] w-[168px]", type: "link", link: "#" }, // ← ここがリンク
+    { label: "お持ち帰り", color: "bg-[#FFAA49]", css: "h-[95px] w-[168px]", type: "link", link: "/takeout" }, 
     { label: "注文履歴", color: "bg-[#FFAA49]", css: "h-[95px] w-[168px]", type: "link", link: "/history" },
     { label: "注文カゴ", color: "bg-[#63A144]", css: "h-[207px] w-[168px]", type: "link", link: "/cart" },
   ];

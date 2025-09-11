@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function MenuItems() {
+export default function MenuItems() {
     return (
         <div className="">
             <Link href="/order">

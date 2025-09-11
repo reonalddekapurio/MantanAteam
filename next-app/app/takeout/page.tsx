@@ -4,15 +4,19 @@ import CategoryMenu from "@/app/components/CategoryMenu";
 import ActionButtons from "@/app/components/ActionButtons";
 import Number from "@/app/components/Number";
 import Product from "@/app/components/Product";
-import  MenuItems  from "../components/MenuItems";
+import MenuItems from "@/app/components/MenuItems";  // ← {} を外す
+import TakeOutMenuBar from "@/app/components/TakeOutMenuBar";
 
-export default function MenuPage() {
+
+
+export default function Takeout() {
     return (
         <div className="flex min-h-screen bg-white">
         {/* 左側：カテゴリー + 商品エリア */}
-        <div className="flex-1 flex  flex-col relative">
+        <div className="flex-1 flex flex-col relative">
             {/* 上部カテゴリー */}
-            <CategoryMenu />
+            <TakeOutMenuBar />
+            
 
 
             {/* 中央 商品エリア（写真 + 矢印） */}
