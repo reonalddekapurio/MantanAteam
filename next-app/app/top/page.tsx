@@ -1,5 +1,4 @@
 "use client";
-
 import CategoryMenu from "@/app/components/CategoryMenu";
 import ActionButtons from "@/app/components/ActionButtons";
 import Number from "@/app/components/Number";

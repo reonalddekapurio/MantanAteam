@@ -1,6 +1,15 @@
+'use client';
+
+import {useRouter} from "next/navigation";
+
 export default function CancelButton() {
+    const router = useRouter();
+
     return (
-        <button className="absolute w-60 h-20 top-5 right-18 bg-gray-300 font-bold text-3xl text-white px-5 py-3 rounded-full">
+        <button 
+        className="absolute w-60 h-20 top-5 right-18 bg-gray-300 font-bold text-3xl text-white px-5 py-3 rounded-full"
+        onClick={() => router.push("/top")}
+        >
         キャンセル
         </button>
     );
