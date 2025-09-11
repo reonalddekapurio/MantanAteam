@@ -8,10 +8,11 @@ import CartList from "@/app/components/CartList";
 import CartSummary from "@/app/components/CartSummary";
 
 const initialItems = [
-    { id: 1, name: "ハンバーグ", price: 1000, quantity: 1, imageUrl: "/hamburg1.jpg" },
-    { id: 2, name: "パスタ", price: 800, quantity: 1, imageUrl: "/pasta.jpg" },
-    { id: 3, name: "スープ", price: 600, quantity: 1, imageUrl: "/soup.jpg" },
-    { id: 4, name: "パンケーキ", price: 600, quantity: 1, imageUrl: "/pancake.jpg" },
+
+    { id: 1, name: "ハンバーグ", price: 1000, quantity: 1, imageUrl: "/img/hamburg/hamburg-1.jpg" },
+    { id: 2, name: "パスタ", price: 800, quantity: 1, imageUrl: "/img/pasta/pasta-2.jpg" },
+    { id: 3, name: "スープ", price: 600, quantity: 1, imageUrl: "/img/soup/soup-1.jpg" },
+    { id: 4, name: "パンケーキ", price: 600, quantity: 1, imageUrl: "/img/dessert/dessert-1.jpg" },
 ];
 
 export default function CartPage() {
@@ -42,7 +43,10 @@ export default function CartPage() {
         </div>
 
         {/* 注文リスト */}
+
+
         <div className="absolute top-25 left-6 right-48 bottom-28 overflow-y-auto">
+
             <CartList items={items} onUpdate={handleUpdate} onRemove={handleRemove} />
         </div>
 
